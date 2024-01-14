@@ -9,40 +9,41 @@
 </head>
 <body>
 
+    <header>
+        <i class="fa-regular fa-snowflake snow" id="snow"></i>
+    </header>
+
     <div class="wrapper">
-        <h2 class="time">10-yanvar, 2024-yil</h2>
+        <h2 class="time" id="time">10-yanvar, 2024-yil</h2>
         <div class="full-time">
-            <p class="hour">14: </p>
-            <p class="minute">43:</p>
-            <p class="seconde"> 13</p>
+            <p class="hour" id="hour">14: </p>
+            <p class="minute" id="minute">43:</p>
+            <p class="seconde" id="seconde"> 13</p>
         </div>
         <h1 class="title">Todo List</h1>
         <p class="copy">
-            &copy;Created by 
-            <a href="#">
-                Khakijanov Mavlon
-            </a>
-        </p>
+        &copy;Created by 
+        <a href="#">
+            Khakijanov Mavlon
+        </a>
+    </p>
+
     </div>
-    <form id="form-eidt" class="form" >
+    <form id="form-creat" class="form" >
+       <div>
         <input id="input"  type="text" placeholder="type todo..." class="input ">
+        <span class="massage" id="message"></span>
+       </div>
         <button class="btn" id="btn">add</button>
     </form>
 
 
 
-    <ul class="list-group">
-        <li class="list-item">
-            <p>mavlon</p>
-            <div class="icon-box">
-                <small class="list-time">11.1.2024</small>
-                <i class="fa-regular fa-pen-to-square edite"></i>
-                <i class="fa-regular fa-trash-can delete"></i>
-            </div>
-        </li>
+    <ul class="list-group" id="list-group">
+        
     </ul>
 
-    <form class="form-edit hidden ">
+    <form class="form-edit hidden " id="form-edit">
         <div>
             <h5>Change This Todo</h5>
             <i class="fa-regular fa-circle-xmark"></i>
@@ -54,6 +55,8 @@
     
 
     <div class="overlay hidden"></div>
+
+    
 
     <script src="./app.js"></script>
 </body>
