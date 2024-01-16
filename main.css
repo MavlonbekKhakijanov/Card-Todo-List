@@ -144,7 +144,7 @@ body{
     align-items: end;
     width: 50%;
     padding: 8px;
-    height: 180px;
+    height: 150px;
     margin: auto;
     background-color: white;
     z-index: 100;
@@ -162,7 +162,16 @@ body{
 .input-edit{
     margin-top: 10px;
     border: 1px solid gray;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
 }
+.form-edit i:hover{
+    cursor: pointer;
+    color: red;
+}
+
 
 .hidden{
     display: none;
@@ -184,6 +193,9 @@ body{
 .massage{
    font-size: 14px;
     color: red;
+}
+.complated{
+    opacity: 0.5;
 }
 
 
